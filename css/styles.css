@@ -1,3 +1,11 @@
+@font-face {
+	font-family: "SpinCycle";
+	src: url("../font/fonts/spinc___.ttf") format("truetype");
+}
+.textLogo {
+font-family: SpinCycle;
+  }
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 * {
@@ -193,9 +201,9 @@ h2, .h2 {
 .logo {
 	width: auto;
 	margin: 0 auto;
-	padding: 16px;
-	height: 140px;
-	width: 358px;
+	padding: 14px;
+	height: auto;
+	width: auto;
 }
 .wrapper {
 	margin: 0 auto;
@@ -538,9 +546,10 @@ h2, .h2 {
 	font-size: 2.2em;
 	text-shadow: none;
 	margin: 8px 0 0 0;
+	color: #366DC8;
 }
 .logo:hover {
-	color: #5A5A5A;
+	color: #64B6F8;
 }
 .header .navbar {
 	margin: 0;
