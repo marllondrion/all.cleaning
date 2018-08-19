@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'cleaning';
+	src:url('fonts/cleaning.eot?rbghl1');
+	src:url('fonts/cleaning.eot?#iefixrbghl1') format('embedded-opentype'),
+		url('fonts/cleaning.ttf?rbghl1') format('truetype'),
+		url('fonts/cleaning.woff?rbghl1') format('woff'),
+		url('fonts/cleaning.svg?rbghl1#cleaning') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: "SpinCycle";
+	src: url('fonts/spinc___.ttf') format("truetype");
+}
+
+[class^="icon1-"], [class*=" icon1-"] {
+	font-family: 'cleaning';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon1-special:before {
+	content: "\e600";
+}
+.icon1-notebook87:before {
+	content: "\e601";
+}
+.icon1-placeholder44:before {
+	content: "\e602";
+}
+.icon1-vacuum6:before {
+	content: "\e603";
+}
+.icon1-wiping16:before {
+	content: "\e604";
+}
+.icon1-writing46:before {
+	content: "\e605";
+}
+
+

@@ -1,0 +1,524 @@
+<?php
+// Make the page validate
+ini_set('session.use_trans_sid', '0');
+
+// Begin the session
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="fav.ico">
+<title>House Cleaning Template</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/template.css" rel="stylesheet">
+<!-- CSS modules -->
+<link href="css/icomoon.css" rel="stylesheet">
+<link href="fonts/style.css" rel="stylesheet">
+<link href="fonts/Aweome/font-awesome.css" rel="stylesheet">
+<link href="css/sfmenu.css" rel="stylesheet">
+</head>
+<body>
+<div class="loader">
+  <div class="bubblingG"> <span id="bubblingG_1"> </span> <span id="bubblingG_2"> </span> <span id="bubblingG_3"> </span> </div>
+</div>
+<!-- Off Canvas Menu -->
+<nav id="off-canvas-menu" class="hidden-md hidden-lg">
+  <div id="off-canvas-menu-close"><span  class="icon icon-cancel"></span></div>
+  <ul class="expander-list">
+    <li> <span class="name"> <a href="index.html">Home</a></span> </li>
+    <li> <span class="name"><span class="expander">-</span> <a href="why_hire_us.html">Why hire us </a></span>
+      <ul>
+        <li> <span class="name"><a href="#">Our guarantee</a></span> </li>
+        <li> <span class="name"><a href="#">Our stuff</a></span> </li>
+        <li> <span class="name"><a href="#">Time Saving</a></span> </li>
+      </ul>
+    </li>    
+    <li> <span class="name"> <a href="reviews.html">Reviews</a></span> </li>
+    <li> <span class="name"> <a href="services.html">Our Services </a></span> </li>
+    <li> <span class="name"> <a href="prices.html">Prices</a></span> </li>
+    <li> <span class="name"> <a href="blog.html">Blog</a></span> </li>    
+    <li><span class="name"><a href="gallery.html">Gallery</a></span></li>
+     <li><span class="name"><a href="contact.html">Contact us</a></span></li>
+  </ul>
+</nav>
+<!-- //end Off Canvas Menu -->
+<section class="mobile-block hidden-md hidden-lg"> 
+    <!-- Mobile menu -->
+    <div class="expand-nav  compact-hidden">
+      <div class="nav-item item-01"><a href="#" id="off-canvas-menu-toggle"><span class="icon icon-menu"></span></a></div>
+    </div>
+    <!-- //end Mobile menu --> 
+</section>
+<!-- Back to top -->
+      <div class="back-to-top"><span class="icon-arrow-up-5"></span></div>
+      <!-- //end Back to top -->
+
+<div id="outer">
+  <div id="outer-canvas"> <!-- Navbar -->
+    <header> 
+      
+      
+      
+      <section class="navbar">
+        <div class="background">
+          <div class="container">
+            <div class="wrappertop row"> 
+              <!-- Logo -->
+              <div class="navbar-logo pull-left">
+                <a href="index.html"><img src="images/header-logo.png" alt="Megatron"></a>
+              </div>
+              <div class="clearfix visible-sm"></div>
+              <!-- //end Logo --> 
+              <!-- Secondary menu -->
+              <div class="navbar-tel pull-right">
+                <span></span>+1-234-567-890
+              </div>                            
+            </div>
+            <div class="wrapperbottom row visible-md visible-lg">
+            <!-- Main menu -->
+            <dl class="navbar-main-menu  pull-left col-md-9 ">
+              <dt class="item item-home">
+                <ul class="sf-menu">
+                  <li><a href="index.html" class="btn-main"><span class="icon icon-house"></span></a></li>
+                </ul>
+              </dt>
+              <dd></dd>
+              <dt class="item">
+                <ul class="sf-menu">
+                  <li><a href="why_hire_us.html">Why hire us</a>
+                    <ul>
+                      <li><a href="#">Our guarantee</a></li>
+                      <li><a href="#">Our stuff</a></li>
+                      <li><a href="#">Time Saving</a></li>                     
+                    </ul>
+                  </li>
+                </ul>
+              </dt>
+              <dd></dd>
+              <dt class="item">
+                <ul class="sf-menu">
+                  <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+              </dt>
+              <dd></dd>
+              <dt class="item">
+                <ul class="sf-menu">
+                  <li><a href="services.html">Our Services</a></li>
+                </ul>
+              </dt>
+              <dd></dd>
+              <dt class="item">
+                <ul class="sf-menu">
+                  <li><a href="prices.html">Prices</a></li>
+                </ul>
+              </dt>
+              <dd></dd>
+              <dt class="item">
+                <ul class="sf-menu">
+                  <li><a href="blog.html">Blog </a></li>
+                </ul>
+              </dt>
+              <dd></dd>
+              <dt class="item">
+                <ul class="sf-menu">
+                  <li> <a href="gallery.html">Gallery</a></li>
+                </ul>
+              </dt>
+              <dd></dd>
+              <dt class="item">
+                <ul class="sf-menu">
+                  <li class="current"> <a href="contact.html">Contact us</a></li>
+                </ul>
+              </dt>
+              <dd></dd>              
+            </dl>
+            <!-- //end Main menu --> 
+              <!-- Search -->
+              <form class="navbar-search form-inline pull-right" role="form">
+                <div class="button-open"><span class=" icon-search-3"></span></div>
+                <div class="form-group">
+                  <button type="submit" class="button"><span class="icon-search-3"></span></button>
+                  <input type="text" class="form-control" value="Search" onblur="if (this.value == '') {this.value = 'Search';}" onfocus="if(this.value == 'Search') {this.value = '';}">
+                </div>
+                <div class="dropdown-search">
+                  <ul>
+                    <li><a href="#"><span class="amount">12</span>search auto</a></li>
+                    <li><a href="#"><span class="amount">22</span>search auto</a></li>
+                    <li><a href="#"><span class="amount">2</span>search auto</a></li>
+                    <li><a href="#"><span class="amount">45</span>search auto</a></li>
+                    <li><a href="#"><span class="amount">11</span>search auto</a></li>
+                    <li><a href="#"><span class="amount">4</span>search auto</a></li>
+                  </ul>
+                </div>
+              </form>
+              <!-- //end Search -->            
+            </div>
+            
+          </div>
+        </div>      
+        
+        
+      </section>     
+    </header>
+    <!-- //end Navbar --> 
+
+    <!-- Navbar switcher -->
+    <div class="navbar-switcher-container">
+      <div class="main-menu-fix">
+        <div class="container">
+          
+        </div>
+      </div>
+      <div class="navbar-switcher">
+        <span class="i-inactive">
+          <img src="images/icon-logo-scroll.png" alt="MENU">
+        </span>
+      </div>
+    </div>
+    <!-- //end Navbar switcher --> 
+    
+       
+    <!-- Social widgets-->
+    <section class="social-widgets hidden-xs">
+      <ul class="items">
+        <li class="item facebook"> <a href="social/facebook.html" class="tab-icon"><span class="icon-facebook-3"></span></a>
+          <div class="tab-content">
+            <div class="title">FACEBOOK</div>
+            <div class="loading"><img src="images/ajax-loader.gif" class="ajaxloader" alt="loader"></div>
+          </div>
+        </li>
+        <li class="item twitter"> <a href="social/twitter.html" class="tab-icon"><span class="icon-twitter-3"></span></a>
+          <div class="tab-content">
+            <div class="title">TWITTER FEEDS</div>
+            <div class="loading"><img src="images/ajax-loader.gif" class="ajaxloader" alt="loader"></div>
+          </div>
+        </li>
+        <li class="item youtube"> <a href="social/youtubevideo.html" class="tab-icon"><span class="icon icon-youtube-3"></span></a>
+          <div class="tab-content">
+            <div class="title">Video</div>
+            <div class="loading"><img src="images/ajax-loader.gif" class="ajaxloader" alt="loader"></div>
+          </div>
+        </li>        
+      </ul>
+    </section> 
+    <!-- //end Social widgets --> 
+
+    <div class="sub-page">
+
+      <!-- breadcrumbs -->
+      <section class="container">
+        <div class="row row-sm">
+          <nav class="breadcrumbs">
+            <ul>
+                <li><a href="index.html">Home</a></li>                
+                <li>Contact Us</li>       
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /breadcrumbs -->
+
+      
+      <section class="content container content-indent-bot2 boxHidded wow zoomIn">
+        <div class="row row-sm">
+          <h1 class="title-bottom3">Contact Us</h1>
+          <div class="contact-row">
+            <div class="col-md-4">
+                <div class="inner-box">
+                  <dl class="icon-box">
+                    <dt>
+                       <span class="fa fa-map-marker"></span>
+                       Our address:
+                    </dt>
+                    <dd>
+                      Envato Level 13, 2 Elizabeth St, Melbourne, Victoria 3000 Australia
+                    </dd>
+                    <dt>
+                       <span class="icon  icon-phone-4"></span>                 
+                       Call us:
+                    </dt>
+                    <dd>
+                      <b>+1-234-567-890</b>
+                    </dd>
+                    <dt>
+                       <span class="icon icon-mail"></span>
+                      Have any questions?
+                    </dt>
+                    <dd>
+                       <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                    </dd>
+                    <dt>
+                       <span class="icon icon-skype-3 "></span>                                 
+                    </dt>
+                    <dd> 
+                      envato.com              
+                    </dd>
+                </dl>
+                <ul class="social-icon">
+                  <li class="color-facebook"><a href="#"><span class="icon icon-facebook-3"></span></a></li>
+                  <li class="color-twitter"><a href="#"><span class="icon icon-twitter-3"></span></a></li>
+                  <li class="color-googleplus"><a href="#"><span class="icon icon-googleplus-2"></span></a></li>
+                  <li class="color-linkedin"><a href="#"><span class="icon icon-linkedin-2"></span></a></li>       
+                  <li class="color-pinterest"><a href="#"><span class="icon icon-pinterest-2"></span></a></li>
+                  <li class="color-youtube"><a href="#"><span class="icon icon-youtube-3"></span></a></li>                
+                </ul>
+                </div>  
+            </div>
+            <div class="col-md-8">
+               <div class="form-block content--fill ">
+                 <h5>Contact Us</h5>
+                  <!-- form-block -->
+                  <form id="contactform" class="boxed-form" name="contactform" method="post" novalidate="novalidate">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-6 form-group">
+                          <label class="control-label">First Name</label>
+                          <input class="form-control" type="text" value="" name="name"  >
+                        </div>
+                         <div class="col-sm-6 col-md-6 form-group">
+                          <label class="control-label">E-mail Address</label>
+                          <input class="form-control" type="text" value="" name="email" >
+                        </div>                
+                      </div>
+                      <div class="row">
+                       <div class="col-sm-6 col-md-6 form-group">
+                          <label class="control-label">Last Name</label>
+                          <input class="form-control" type="text" value="" name="lastname" >
+                        </div>
+                        <div class="col-sm-6 col-md-6 form-group">
+                          <label class="control-label">Phone number</label>
+                          <input class="form-control" type="text" value="" name="phone">
+                        </div>
+                      </div>             
+                      <div class="form-group">
+                        <label class="control-label">Questions or Comments</label>
+                        <textarea class="form-control"  name="message"></textarea>
+                      </div>
+                      <button class="btn btn-default"  type="submit" id="submit">Send message</button>
+                    </div>                    
+                      
+                    </div>
+                  </form>
+                  <!-- /form-block -->
+               </div>
+            </div>
+          </div>       
+        </div>
+      </section>
+      
+      <section class="content container content-indent-bot2 boxHidded wow zoomIn">
+        <div class="row row-sm">
+          <h2 class="mega title-bottom2">Our Locations</h2>
+          <div class="box-col-5">
+            <div>
+              8971 Wishing Hills Street,<br> 
+              Kaneohe, MN, <br>
+              56456-2696, US, <br>
+              <b>(320) 700-5698</b>
+            </div>
+            <div>
+              1386 Emerald Cove,<br> 
+              Bombay, MN, 55941-8395, <br>
+              US, <b>(651) 949-9874</b>
+            </div>
+            <div>
+              6219 Misty Zephyr Thicket, <br>
+              Searchlight, TN, <br>
+              37860-4769, US, <br>
+              <b>(731) 557-6988</b>
+            </div>
+            <div>
+              9822 Lost Rise, Chumstick, <br>
+              MN, 55489-2178, US, <br>
+              <b>(952) 576-6504</b>
+            </div>
+            <div>
+              8891 Burning River Pike, <br>
+              Number Seven, TN, <br>
+              37774-1124, US,<br> 
+              <b>(865) 567-8177</b>
+            </div>
+          </div>
+        </div>
+      </section>  
+      
+      <!-- map -->
+      <section>
+        <div id="map"></div>
+      </section>
+      <!-- //end map -->  
+      
+ 
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+      <section class="footer-navbar">
+        <div class="container content nopad-xs">
+          <div class="row">
+            <!-- col-logo -->
+            <div class="col-logo  hidden-xs">
+                <p>© 2016 House Cleaning. All Rights Reserved. </p>
+                <a class="logo logo--footer" href="index.html">
+                   <img alt="" src="images/logo-transparent.png">
+                </a>
+            </div>
+            <!-- /col-logo -->            
+            <!-- col-list -->
+            <div class="col-list-left collapsed-block">
+              <h3>Information<a class="expander visible-xs" href="#TabBlock-3">+</a></h3>
+              <div  class="tabBlock" id="TabBlock-3">
+                <ul class="menu">
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="faq.html">Frequently Asked Questions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /col-list -->
+            <!-- col-list -->
+            <div class="col-list-right collapsed-block">
+              <h3>Customer service<a class="expander visible-xs" href="#TabBlock-4">+</a></h3>
+              <div  class="tabBlock" id="TabBlock-4">
+                <ul class="menu">
+                  <li><a href="#">Online support</a></li>
+                  <li><a href="#">Help & FAQs</a></li>
+                  <li><a href="#">Call Center</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /col-list -->
+            <!-- col-newsletter -->
+            <div class="col-newsletter collapsed-block">
+              <h3>Newsletter Signup <a class="expander visible-xs" href="#TabBlock-6">+</a></h3>
+              <div  class="tabBlock" id="TabBlock-6">
+               <p>Enter your email below to subscribe<br>  to our newsletter</p>
+                <form class="form-inline" role="form">
+                  <div class="form-group input-control">
+                    <button type="submit" class="button"><span class="icon-envelope-2"></span></button>
+                    <input type="text" class="form-control" value="Your E-mail..." onblur="if (this.value == '') {this.value = 'Your E-mail...';}" onfocus="if(this.value == 'Your E-mail...') {this.value = '';}" >
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /col-newsletter -->           
+          </div>
+        </div>
+      </section>      
+    </footer>
+    <div id="outer-overlay"></div>
+    <!-- //end Footer --></div>
+</div>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]--> 
+
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/superfish.js"></script> 
+<script src="js/supersubs.js"></script>
+<script src="js/slick.min.js"></script> 
+<script src="js/jquery.countTo.js"></script>
+<script src="js/main.js"></script> 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>        
+<script type="text/javascript">
+     // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 11,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+            // How you would like to style the map. 
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#103c4f"},{"visibility":"on"}]}]
+        };
+
+        // Get the HTML DOM element that will contain your map 
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
+
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        var image = 'images/beachflag.png';
+        // Let's also add a marker while we're at it
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(40.6700, -73.9400),
+            map: map,           
+            icon : image
+        });
+        
+        }
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script> 
+<script type="text/javascript"> 
+// validate book form
+$(function() {
+    $('#contactform').validate({
+        rules: {
+      name: {
+                required: true,
+                minlength: 2
+            },
+     
+     
+      email: {
+                required: true,
+                email: true
+            },
+     
+
+        },
+        messages: {
+     
+            name: {
+                required: "Please enter your name",
+                minlength: "Your name must consist of at least 2 characters"
+            },           
+     
+        email: {
+                required: "Please enter your email"
+            }
+        },
+        submitHandler: function(form) {
+            $(form).ajaxSubmit({
+                type:"POST",
+                data: $(form).serialize(),
+                url:"contact-form.php",
+                success: function() {
+                      $('#success').fadeIn();
+            $( '#contactform' ).each(function(){this.reset();});
+                },
+                error: function() {
+                    $('#contactform').fadeTo( "slow", 0, function() {
+                        $('#error').fadeIn();
+                    });
+                }
+            });
+        }
+    });
+});
+</script> 
+</body>
+</html>
